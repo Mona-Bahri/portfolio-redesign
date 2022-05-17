@@ -21,14 +21,35 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <nav>
-      <div><a href="#">bahri</a></div>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">work</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#" class="contact-btn shadow">contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <div class="logo">Bahri</div>
+      <nav>
+        <a href="javascript:;" id="togglebtn">
+          <span></span>
+          <span></span>
+        </a>
+        <div class="navbar">
+          <ul class="nav-links">
+            <li><a href="#" style="color: #eebbc3">home</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">about</a></li>
+            <li class="contact-btn shadow">
+              <a href="#" style="color: #232946">contact</a>
+            </li>
+          </ul>
+        </div>
+        <div id="menu-overlay">
+          <ul class="nav-links">
+            <li><a href="#" style="color: #eebbc3">home</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">about</a></li>
+            <li class="">
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <script src="src/portfolio.js"></script>
   </body>
 </html>
