@@ -26,11 +26,13 @@ header {
   justify-content: space-between;
 }
 
-.logo {
+.logo a {
   color: var(--secondery-color);
   padding: 20px;
   font-size: 28px;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Bitter", serif;
 }
 nav {
   padding: 20px 0px;
@@ -192,6 +194,7 @@ nav {
   padding: 15px;
   border: none;
 }
+
 .project-layout h2 {
   color: var(--main-color);
   font-size: 24px;
@@ -216,6 +219,46 @@ nav {
 }
 
 /*#endregion main*/
+/*#region footer*/
+footer {
+  background-color: var(--main-color);
+  padding: 30px;
+}
+footer p {
+  color: var(--primery-color);
+  text-align: center;
+  font-size: 34px;
+  font-family: var(--secondery-font);
+}
+footer .email a {
+  color: #f8f5f27e;
+  text-decoration: none;
+  font-size: 26px;
+}
+footer .email a:hover {
+  color: #f8f5f2;
+}
+.social-media {
+  font-size: 28px;
+}
+.social-media a {
+  padding: 10px;
+  color: var(--primery-color);
+}
+.social-media a:hover {
+  color: var(--secondery-color);
+}
+.gitLink {
+  text-align: center;
+  color: var(--primery-color);
+}
+.gitLink a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/*#endregion fotter*/
+
 @media (max-width: 655px) {
   .logo {
     padding: 10px;
@@ -260,6 +303,12 @@ nav {
   }
   #projects {
     margin-top: 50px;
+  }
+  footer p {
+    font-size: 28px;
+  }
+  footer .email a {
+    font-size: 20px;
   }
 }
 @media (max-width: 991px) {
