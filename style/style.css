@@ -15,6 +15,9 @@ body {
 main {
   padding: 100px 0px;
 }
+.hide-body {
+  overflow: hidden;
+}
 
 /*#region nav*/
 header {
@@ -27,7 +30,7 @@ header {
   color: var(--secondery-color);
   padding: 20px;
   font-size: 28px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 nav {
   padding: 20px 0px;
@@ -50,14 +53,14 @@ nav {
 .nav-links li a:hover {
   color: var(--accent-color);
 }
-.contact-btn {
+.primary-btn {
   background-color: var(--accent-color);
   padding: 10px 30px;
   transition: ease-in-out 100ms;
   text-decoration: none;
   cursor: pointer;
 }
-.contact-btn:hover {
+.primary-btn:hover {
   background-color: #078080e8;
 }
 /*#region mobile-nav*/
@@ -65,7 +68,7 @@ nav {
   position: absolute;
   top: 25px;
   right: 45px;
-  z-index: 2;
+  z-index: 1000;
   display: none;
   width: 20px;
   height: 20px;
@@ -113,6 +116,7 @@ nav {
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
+  z-index: 999;
 }
 #menu-overlay ul {
   display: grid;
@@ -140,9 +144,7 @@ nav {
 /*#endregion nav*/
 
 /*#region main*/
-.hero {
-  padding: 20px;
-}
+
 .img-container {
   width: 100px;
 }
@@ -172,7 +174,45 @@ nav {
   color: var(--primery-color);
 }
 #projects {
-  margin-top: 100px;
+  margin-top: 150px;
+  background-color: #fffffe;
+}
+#projects .row {
+  padding: 50px;
+}
+#projects h4 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: var(--main-color);
+}
+
+.project-layout {
+  background-color: #f8f5f2;
+  padding: 15px;
+  border: none;
+}
+.project-layout h2 {
+  color: var(--main-color);
+  font-size: 24px;
+  font-family: var(--secondery-font);
+}
+.project-layout img {
+  margin-inline: 10px;
+  padding: 6px;
+  border: solid 2px #232323c4;
+  border-radius: 10px;
+  color: #222525d7;
+}
+.project-layout p {
+  font-size: 18px;
+}
+
+.tools span {
+  padding: 4px 10px;
+  background-color: #23232311;
+  color: var(--main-color);
+  border-radius: 5px;
 }
 
 /*#endregion main*/
@@ -204,6 +244,22 @@ nav {
   }
   .hero .about p {
     font-size: 18px;
+  }
+  #projects h4 {
+    font-size: 28px;
+  }
+  #projects .row {
+    padding: 0;
+  }
+  .project-layout {
+    line-break: anywhere;
+    text-align: center;
+  }
+  .col-md-6 {
+    margin-bottom: 30px;
+  }
+  #projects {
+    margin-top: 50px;
   }
 }
 @media (max-width: 991px) {
