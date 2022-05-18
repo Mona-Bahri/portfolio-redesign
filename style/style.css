@@ -177,7 +177,8 @@ nav {
 }
 #projects {
   margin-top: 150px;
-  background-color: #fffffe;
+
+  background-color: #f8f5f2;
 }
 #projects .row {
   padding: 50px;
@@ -190,7 +191,7 @@ nav {
 }
 
 .project-layout {
-  background-color: #f8f5f2;
+  background-color: #fffffe;
   padding: 15px;
   border: none;
 }
@@ -308,6 +309,8 @@ footer .email a:hover {
     font-size: 28px;
   }
   footer .email a {
+    color: #f8f5f27e;
+    text-decoration: none;
     font-size: 20px;
   }
 }
