@@ -12,6 +12,9 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--primery-color);
 }
+main {
+  padding: 100px 20px;
+}
 
 /*#region nav*/
 header {
@@ -42,20 +45,20 @@ nav {
 .nav-links li a {
   color: var(--main-color);
   text-decoration: none;
+  font-weight: 400;
 }
 .nav-links li a:hover {
   color: var(--accent-color);
 }
 .contact-btn {
-  background-color: var(--main-color);
+  background-color: var(--accent-color);
   padding: 10px 30px;
   transition: ease-in-out 100ms;
-  border-radius: 2px;
   text-decoration: none;
   cursor: pointer;
 }
 .contact-btn:hover {
-  background-color: #e5e5e5c9;
+  background-color: #eebbc3ef;
 }
 /*#region mobile-nav*/
 #togglebtn {
@@ -133,13 +136,39 @@ nav {
 #menu-overlay ul li a:hover {
   color: var(--accent-color);
 }
-/*end#region mobile-nav*/
-
+/*#endregion mobile-nav*/
 /*#endregion nav*/
-/*#region main*/
 
+/*#region main*/
+.img-container {
+  width: 100px;
+}
+.hero .about h2 {
+  font-size: 40px;
+  color: var(--main-color);
+  font-weight: normal;
+}
+.hero .about h1 {
+  font-size: 50px;
+  color: var(--main-color);
+}
+.hero .about p {
+  font-size: 30px;
+  color: #e5e5e5a6;
+}
+.project-btn {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: var(--accent-color);
+  color: #232946;
+}
+.project-btn:hover {
+  color: var(--primery-color);
+  background-color: #eebbc3ef;
+}
 /*#endregion main*/
-@media (max-width: 650px) {
+@media (max-width: 655px) {
   .logo {
     padding: 10px;
     font-size: 22px;
@@ -152,5 +181,25 @@ nav {
   }
   #menu-overlay {
     display: flex;
+  }
+  main {
+    padding: 50px 20px;
+  }
+  .hero {
+    text-align: center;
+  }
+  .hero .about h2 {
+    font-size: 28px;
+  }
+  .hero .about h1 {
+    font-size: 30px;
+  }
+  .hero .about p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .hero {
+    text-align: center;
   }
 }
