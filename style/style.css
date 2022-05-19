@@ -177,8 +177,7 @@ nav {
 }
 #projects {
   margin-top: 150px;
-
-  background-color: #f8f5f2;
+  background-color: var(--primery-color);
 }
 #projects .row {
   padding: 50px;
@@ -259,6 +258,15 @@ footer .email a:hover {
 }
 
 /*#endregion fotter*/
+
+/*#region project page*/
+.projecs-container h4 {
+  color: var(--main-color);
+  font-size: 35px;
+  padding: 50px;
+  margin-top: 20px;
+}
+/*#endregion project page*/
 
 @media (max-width: 655px) {
   .logo {

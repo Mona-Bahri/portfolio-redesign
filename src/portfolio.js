@@ -4,7 +4,7 @@ document.querySelector("#togglebtn").onclick = function (event) {
 
   menu.classList.toggle("is-active");
   toggleButton.classList.toggle("is-active");
- var body = document.querySelector("body");
- body.classList.toggle("hide-body");
+  var body = document.querySelector("body");
+  body.classList.toggle("hide-body");
   event.preventDefault();
 };
