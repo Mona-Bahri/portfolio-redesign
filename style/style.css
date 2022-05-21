@@ -18,6 +18,9 @@ main {
 .hide-body {
   overflow: hidden;
 }
+.logo {
+  margin-top: 18px;
+}
 
 /*#region nav*/
 header {
@@ -362,7 +365,7 @@ footer .email a:hover {
     font-size: 18px;
   }
   #projects h4 {
-    font-size: 28px;
+    font-size: 22px;
   }
   #projects .row {
     padding: 0;
