@@ -201,6 +201,7 @@ nav {
   font-family: var(--secondery-font);
 }
 .project-layout img {
+  width: 64px;
   margin-inline: 10px;
   padding: 6px;
   border: solid 2px #232323c4;
@@ -260,15 +261,78 @@ footer .email a:hover {
 /*#endregion fotter*/
 
 /*#region project page*/
+.projecs-container {
+  margin-bottom: 100px;
+}
 .projecs-container h4 {
   color: var(--main-color);
-  font-size: 35px;
+  font-size: 40px;
   padding: 50px;
   margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
 }
+
+.projects-images {
+  --_spacer: 1rem;
+  gap: var(--_spacer);
+  padding: 0 var(--_spacer) var(--_spacer);
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5rem;
+  background-color: #b8c1ec0e;
+  border-radius: 2px;
+  box-shadow: 5px 8px;
+  display: grid;
+  gap: var(--_spacer);
+}
+.projects-img > img {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.item > .project-name {
+  position: absolute;
+  inset: 0;
+  padding: var(--_spacer);
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item > img,
+.item > .project-name {
+  transition: 200ms ease-in-out;
+}
+.item > .project-name.fade {
+  opacity: 1;
+}
+.item:hover > .project-name.fade {
+  opacity: 0.6;
+}
+.gray {
+  filter: grayscale(100%);
+}
+.projects-images a {
+  color: #232323a6;
+}
+.project-name h3 {
+  line-height: 45px;
+}
+
 /*#endregion project page*/
 
 @media (max-width: 655px) {
+  .project-name h3 {
+    font-size: 14px;
+  }
+  .projecs-container h4 {
+    font-size: 24px;
+    padding: 0;
+  }
   .logo {
     padding: 10px;
     font-size: 22px;
