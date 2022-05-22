@@ -228,6 +228,7 @@ footer {
   background-color: var(--main-color);
   padding: 30px;
 }
+
 footer p {
   color: var(--primery-color);
   text-align: center;
@@ -260,7 +261,22 @@ footer .email a:hover {
   color: var(--accent-color);
   text-decoration: none;
 }
-
+.contact-warpper p,
+.resources-warpper p {
+  font-size: 24px;
+  color: var(--primery-color);
+}
+.contact-warpper .email {
+  text-align: center;
+}
+.resources-warpper div a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--primery-color);
+}
+.resources-warpper div a:hover {
+  color: var(--secondery-color);
+}
 /*#endregion fotter*/
 
 /*#region project page*/
@@ -279,16 +295,16 @@ footer .email a:hover {
 .projects-images {
   --_spacer: 1rem;
   gap: var(--_spacer);
-  padding: 0 var(--_spacer) var(--_spacer);
+  padding: 30px;
 }
 
 .item {
   position: relative;
   overflow: hidden;
   padding: 0.5rem;
-  background-color: #b8c1ec0e;
+  background-color: var(--primery-color);
   border-radius: 2px;
-  box-shadow: 5px 8px;
+  box-shadow: 5px 8px #232323a6;
   display: grid;
   gap: var(--_spacer);
 }
@@ -311,24 +327,54 @@ footer .email a:hover {
   transition: 200ms ease-in-out;
 }
 .item > .project-name.fade {
-  opacity: 1;
+  opacity: 0;
 }
 .item:hover > .project-name.fade {
-  opacity: 0.6;
+  opacity: 1;
 }
-.gray {
-  filter: grayscale(100%);
-}
-.projects-images a {
-  color: #232323a6;
-}
+
 .project-name h3 {
+  color: var(--primery-color);
   line-height: 45px;
+}
+.project-content span {
+  color: var(--secondery-color);
+}
+.project-content h2 {
+  color: var(--main-color);
+}
+.project-content p {
+  color: #232323f1;
+  font-size: 18px;
+}
+.secondery-btn {
+  background-color: var(--secondery-color);
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--main-color);
+}
+.secondery-btn:hover {
+  background-color: #dd5341;
 }
 
 /*#endregion project page*/
 
 @media (max-width: 655px) {
+  .projecs-container h4 {
+    margin-bottom: 0px;
+  }
+  .project-content {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .logo a {
+    padding: 0;
+  }
+  .logo {
+    padding: 10px;
+    font-size: 22px;
+    margin-top: 0px;
+  }
   .project-name h3 {
     font-size: 14px;
   }
@@ -336,10 +382,7 @@ footer .email a:hover {
     font-size: 24px;
     padding: 0;
   }
-  .logo {
-    padding: 10px;
-    font-size: 22px;
-  }
+
   .navbar {
     display: none;
   }
@@ -381,7 +424,7 @@ footer .email a:hover {
     margin-top: 50px;
   }
   footer p {
-    font-size: 28px;
+    font-size: 26px;
   }
   footer .email a {
     color: #f8f5f27e;
