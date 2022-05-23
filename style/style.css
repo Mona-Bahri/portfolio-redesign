@@ -377,6 +377,9 @@ footer .email a:hover {
 }
 /*#endregion about me*/
 @media (max-width: 655px) {
+  .projecs-container {
+    margin-top: 50px;
+  }
   .about-me h4 {
     font-size: 26px;
   }
@@ -448,8 +451,8 @@ footer .email a:hover {
     line-break: anywhere;
     text-align: center;
   }
-  .col-md-6 {
-    margin-bottom: 30px;
+  .project-col {
+    margin-top: 30px;
   }
   #projects {
     margin-top: 50px;
