@@ -376,6 +376,36 @@ footer .email a:hover {
   color: var(--secondery-color);
 }
 /*#endregion about me*/
+
+/*#region contact*/
+.contact-form {
+  display: flex;
+  display: flex;
+  justify-content: center;
+}
+.contact-form input,
+.contact-form .subject {
+  background-color: rgba(7, 128, 128, 0.137);
+  border: solid 2px #23232385;
+}
+.contact-form input:focus,
+.contact-form .subject {
+  outline: none !important;
+}
+.contact-form .subject {
+  width: 100%;
+  background-color: rgba(7, 128, 128, 0.137);
+}
+.submit-btn {
+  background-color: var(--secondery-color);
+  padding: 5px 20px;
+}
+.submit-btn:hover {
+  background-color: #dd5341;
+}
+
+/*#endregion contact*/
+
 @media (max-width: 655px) {
   .projecs-container {
     margin-top: 50px;
