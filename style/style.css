@@ -380,7 +380,6 @@ footer .email a:hover {
 /*#region contact*/
 .contact-form {
   display: flex;
-  display: flex;
   justify-content: center;
 }
 .contact-form input,
@@ -393,6 +392,7 @@ footer .email a:hover {
   outline: none !important;
 }
 .contact-form .subject {
+  margin-top: 20px;
   width: 100%;
   background-color: rgba(7, 128, 128, 0.137);
 }
@@ -406,7 +406,27 @@ footer .email a:hover {
 
 /*#endregion contact*/
 
-@media (max-width: 655px) {
+/*#region thank you*/
+.img-warpper {
+  display: flex;
+  flex-direction: column;
+}
+.thank-you {
+  width: 226px;
+  margin-inline: 100px;
+}
+/*#endregion thank you*/
+@media (max-width: 695px) {
+  .thank-you {
+    width: 138px;
+    margin-inline: 45px;
+  }
+  .contact-form .subject {
+    margin-top: 0px;
+  }
+  .contact-form input {
+    margin-bottom: 10px;
+  }
   .projecs-container {
     margin-top: 50px;
   }
