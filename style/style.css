@@ -378,6 +378,31 @@ footer .email a:hover {
 /*#endregion about me*/
 
 /*#region contact*/
+.contact-container a {
+  color: var(--main-color);
+}
+.line {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.line img {
+  width: 600px;
+}
+.contact-container {
+  background-color: #fffffe93;
+}
+.contact-container h2 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 46px;
+  font-family: var(--secondery-font);
+}
+.contact-container p {
+  color: #232323dc;
+  text-align: center;
+  font-size: 30px;
+}
 .contact-form {
   display: flex;
   justify-content: center;
@@ -417,6 +442,12 @@ footer .email a:hover {
 }
 /*#endregion thank you*/
 @media (max-width: 695px) {
+  .contact-container p {
+    font-size: 22px;
+  }
+  .contact-container h2 {
+    font-size: 36px;
+  }
   .thank-you {
     width: 138px;
     margin-inline: 45px;
