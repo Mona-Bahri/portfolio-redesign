@@ -400,6 +400,7 @@ footer .email a:hover {
   color: #232323dc;
   text-align: center;
   font-size: 30px;
+  margin-top: 80px;
 }
 .contact-form {
   display: flex;
