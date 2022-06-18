@@ -378,55 +378,6 @@ footer .email a:hover {
 /*#endregion about me*/
 
 /*#region contact*/
-.contact-container a {
-  color: var(--main-color);
-}
-.line {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-.line img {
-  width: 600px;
-}
-
-.contact-container h2 {
-  color: var(--main-color);
-  text-align: center;
-  font-size: 46px;
-  font-family: var(--secondery-font);
-}
-.contact-container p {
-  color: #232323dc;
-  text-align: center;
-  font-size: 30px;
-  margin-top: 80px;
-}
-.contact-form {
-  display: flex;
-  justify-content: center;
-}
-.contact-form input,
-.contact-form .subject {
-  background-color: rgba(7, 128, 128, 0.137);
-  border: solid 2px #23232385;
-}
-.contact-form input:focus,
-.contact-form .subject {
-  outline: none !important;
-}
-.contact-form .subject {
-  margin-top: 20px;
-  width: 100%;
-  background-color: rgba(7, 128, 128, 0.137);
-}
-.submit-btn {
-  background-color: var(--secondery-color);
-  padding: 5px 20px;
-}
-.submit-btn:hover {
-  background-color: #dd5341;
-}
 
 /*#endregion contact*/
 
@@ -441,22 +392,6 @@ footer .email a:hover {
 }
 /*#endregion thank you*/
 @media (max-width: 695px) {
-  .contact-container p {
-    font-size: 22px;
-  }
-  .contact-container h2 {
-    font-size: 36px;
-  }
-  .thank-you {
-    width: 138px;
-    margin-inline: 45px;
-  }
-  .contact-form .subject {
-    margin-top: 0px;
-  }
-  .contact-form input {
-    margin-bottom: 10px;
-  }
   .projecs-container {
     margin-top: 50px;
   }
