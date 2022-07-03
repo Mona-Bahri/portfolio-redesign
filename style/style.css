@@ -426,6 +426,9 @@ footer .email a:hover {
 /*#endregion contact*/
 
 @media (max-width: 695px) {
+  .contact-area {
+    margin-bottom: 35px;
+  }
   .projecs-container {
     margin-top: 50px;
   }
@@ -521,5 +524,12 @@ footer .email a:hover {
   }
   .contact-container {
     padding: 0;
+  }
+  .contact-area p {
+    font-size: 32px;
+  }
+
+  .contact-area a span {
+    font-size: 16px;
   }
 }
