@@ -64,44 +64,46 @@
       </nav>
     </header>
     <main>
-      <div class="contact-container">
-        <h2 class="mb-5">Let's get in touch!</h2>
-        <div class="contact-form">
-          <form
-            action="https://formsubmit.co/monabahri184@gmail.com"
-            method="POST"
-          >
-            <input type="text" name="name" required placeholder="Name...." />
-            <input type="email" name="email" required placeholder="Email...." />
+      <div class="container contact-container">
+        <div class="row">
+          <div class="col-md-6 contact-area">
+            <p>Let's get in touch!</p>
+            <a href="mailto:monabahri184@gmail.com" target="_blank"
+              ><i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>monabahri184@gmail.com</span></a
+            >
+          </div>
+          <div class="col-md-6 message-area">
+            <div class="contact-form">
+              <form
+                action="https://formsubmit.co/monabahri184@gmail.com"
+                method="POST"
+              >
+                <input
+                  class="inputs"
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Name...."
+                />
+                <input
+                  class="mb-3 mt-3 inputs"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Email...."
+                />
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Write something.."
+                  style="height: 200px"
+                ></textarea>
 
-            <textarea
-              name="message"
-              class="subject"
-              placeholder="Your message....."
-            ></textarea>
-            <input
-              type="hidden"
-              name="_next"
-              value="https://fabulous-kleicha-65e289.netlify.app/submit.html"
-            />
-            <button type="submit" class="mt-4 submit-btn">Send</button>
-          </form>
-        </div>
-
-        <p>You can also find me here</p>
-
-        <div class="d-flex justify-content-center social-media">
-          <a href="mailto:monabahri184@gmail.com" target="_blank"
-            ><i class="fa fa-envelope" aria-hidden="true"></i
-          ></a>
-          <a href="https://github.com/Mona-Bahri" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/mona-bahri-7b110623a"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
+                <button type="submit" class="mt-4 submit-btn">Send</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </main>

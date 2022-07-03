@@ -378,19 +378,53 @@ footer .email a:hover {
 /*#endregion about me*/
 
 /*#region contact*/
+.contact-container {
+  padding: 40px;
+}
+#subject {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  resize: vertical;
+}
+.inputs {
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  padding: 5px;
+}
+.submit-btn {
+  color: var(--main-color);
+  font-weight: bold;
+  padding: 5px 15px;
+  background: #f45d48;
+  border: 2px solid var(--main-color);
+}
+.submit-btn:hover {
+  background: #ca4d3c;
+}
+.contact-area p {
+  font-size: 42px;
+  color: var(--main-color);
+}
+.contact-area i {
+  color: var(--accent-color);
+  font-size: 20px;
+  margin-inline: 5px;
+}
+.contact-area a {
+  text-decoration: none;
+}
+.contact-area a span {
+  font-size: 20px;
+  color: var(--main-color);
+}
+.contact-area a span:hover {
+  color: #232323af;
+}
 
 /*#endregion contact*/
 
-/*#region thank you*/
-.img-warpper {
-  display: flex;
-  flex-direction: column;
-}
-.thank-you {
-  width: 226px;
-  margin-inline: 100px;
-}
-/*#endregion thank you*/
 @media (max-width: 695px) {
   .projecs-container {
     margin-top: 50px;
@@ -484,5 +518,8 @@ footer .email a:hover {
 @media (max-width: 991px) {
   .hero {
     text-align: center;
+  }
+  .contact-container {
+    padding: 0;
   }
 }
